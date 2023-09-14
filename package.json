@@ -3,7 +3,6 @@
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
     "cypress": "^13.2.0",
-    "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
@@ -37,6 +36,7 @@
   },
   "homepage": "https://github.com/AleksAvtushko/TS_AutoTests#readme",
   "dependencies": {
+    "eslint": "8.22.0",
     "typescript": "^5.2.2"
   }
 }
