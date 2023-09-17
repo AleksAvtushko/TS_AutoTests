@@ -1,42 +1,42 @@
 {
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "cypress": "^13.2.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
-  },
-  "name": "ts_autotests",
-  "description": "TS_AQATests",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format:code": "prettier --write \"**/.js,.ts\" ",
-    "lint": "eslint ./**/*.{ts,json}",
-    "lint:fix": "eslint ./**/*.{ts,json} --quiet --fix",
-    "prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AleksAvtushko/TS_AutoTests.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "lint-staged": {
-    "*.ts": [
-      "npm run lint"
-    ]
-  },
-  "bugs": {
-    "url": "https://github.com/AleksAvtushko/TS_AutoTests/issues"
-  },
-  "homepage": "https://github.com/AleksAvtushko/TS_AutoTests#readme",
-  "dependencies": {
-    "eslint": "8.22.0",
-    "typescript": "^5.2.2"
-  }
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.7.0",
+        "@typescript-eslint/parser": "^6.7.0",
+        "cypress": "^13.2.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^14.0.1",
+        "prettier": "^3.0.3"
+    },
+    "name": "ts_autotests",
+    "description": "TS_AQATests",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format:code": "prettier --write \"**/.js,.ts\" ",
+        "lint": "eslint ./**/*.{ts,json}",
+        "lint:fix": "eslint ./**/*.{ts,json} --quiet --fix",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AleksAvtushko/TS_AutoTests.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "lint-staged": {
+        "*.ts": [
+            "npm run lint"
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/AleksAvtushko/TS_AutoTests/issues"
+    },
+    "homepage": "https://github.com/AleksAvtushko/TS_AutoTests#readme",
+    "dependencies": {
+        "eslint": "8.22.0",
+        "typescript": "^5.2.2"
+    }
 }
