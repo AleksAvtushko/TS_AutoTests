@@ -23,12 +23,11 @@ describe("Test log in functions", () => {
         cy.get('[class="sc-cpmKsF dFrijd message"]').should("be.visible");
     });
 
-    it.only("check: incorrect email", () => {
-        cy.get('[class="sc-bRBYWo eOipuu"]').click();
-        cy.wait(5000);
+    it("check: correct email and password", () => {
+        cy.get('[class="sc-bRBYWo eOipuu"]').click().wait(5000);
         cy.get('[class="sc-VigVT sc-bmyXtO haGtID"]').type(LoginData.correctEmail);
         cy.get('[class="sc-VigVT sc-bmyXtO duXQWC"]').type(LoginData.correctPassword);
         cy.get('[class="sc-LKuAh sc-iBEsjs frrQCc"]').click();
-        cy.get('[class="sc-fxMfqs enUwVe"]').should("be.visible").wait(5000);
+        cy.url({ timeout: 7000 }).should("equal", LoginData.urlLoginIntoSite);
     });
 });
