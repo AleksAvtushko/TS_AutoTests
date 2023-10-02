@@ -7,6 +7,18 @@ describe("Test log in functions", () => {
         });
     });
 
+    it("check: Sign in pop-up should be opened after click on LogIn button", () => {
+        cy.get('[class="sc-bRBYWo eOipuu"]').click();
+        cy.get('[class="MuiDialogContent-root dialog-content sc-gldTML gzoRBC"]').should("be.visible");
+    });
+
+    it.only("check: Sign in pop-up should be closed after click on close button", () => {
+        cy.get('[class="sc-bRBYWo eOipuu"]').click();
+        cy.get('[class="MuiDialogContent-root dialog-content sc-gldTML gzoRBC"]').should("be.visible");
+        cy.get('[class="MuiButtonBase-root MuiIconButton-root sc-iIHSe jRuRaZ close-button"]').click();
+        cy.get('[class="MuiDialogContent-root dialog-content sc-gldTML gzoRBC"]').should("not.exist");
+    });
+
     it("check: incorrect password data", () => {
         cy.get('[class="sc-bRBYWo eOipuu"]').click();
         cy.get('[class="sc-VigVT sc-bmyXtO haGtID"]').type("ilya.stupen+1@imbuesystems.com");
