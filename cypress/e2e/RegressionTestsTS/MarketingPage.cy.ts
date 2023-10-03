@@ -4,6 +4,8 @@ describe("Test log in functions", () => {
     beforeEach(() => {
         cy.fixture("appConsts").then((data) => {
             cy.visit(data.URL);
+            cy.viewport(1920, 1080);
+            cy.location("protocol").should("eq", "https:");
         });
     });
 
