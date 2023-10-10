@@ -5,4 +5,5 @@ export enum CommonData {
     correctPassword = "IlyaStupen_99",
     urlLoginIntoSite = "https://dev.toothapps.com/Site/Home/Calendar",
     urlMarketingPage = "https://dev.toothapps.com/Marketing/Home",
+    urlDemoPage = "https://dev.toothapps.com/Marketing/Home/getDemo",
 }

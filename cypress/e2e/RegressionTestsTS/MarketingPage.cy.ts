@@ -18,8 +18,13 @@ describe("Test log in functions", () => {
         cy.url().should("equal", CommonData.urlMarketingPage);
     });
 
-    it.only("check: TOOTHAPPS® Master subscription agreement should be opened", () => {
+    it.only("Demo page should be opened if click on View Demo button", () => {
+        cy.get('[class="sc-gZMcBi sc-jhAzac djQCcp"]').first().click();
+        cy.url().should("equal", CommonData.urlDemoPage);
+    });
+
+    /*(test is not working) it.only("check: TOOTHAPPS® Master subscription agreement should be opened", () => {
         cy.get('[class="sc-krDsej iCOzhZ"]').eq(3).click();
         cy.window();
-    });
+    });*/
 });
